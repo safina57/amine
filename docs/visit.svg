@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="132" height="44" viewBox="0 0 132 44" role="img" aria-label="Portfolio">
+  <title>Portfolio</title>
+  <!-- Opaque paper fill on purpose: the badge sits on GitHub's own background,
+       which flips with the viewer's theme. Carrying its own ground keeps the
+       ink readable in both, the way the site's Resume button does over the
+       painting. Width matches the cat above it so the two centre as a pair. -->
+  <rect x="0.5" y="0.5" width="131" height="43" rx="10"
+        fill="#fdfcf3" stroke="#24303a" stroke-opacity="0.2" />
+  <text x="66" y="27.5" text-anchor="middle"
+        font-family="Fraunces, Georgia, 'Times New Roman', serif"
+        font-size="15" font-weight="600" letter-spacing="0.2" fill="#24303a">Portfolio</text>
+</svg>
