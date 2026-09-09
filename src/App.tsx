@@ -1,4 +1,6 @@
 import { useEffect, useRef } from "react";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import { SiGithub, SiX } from "@icons-pack/react-simple-icons";
 import { FileText } from "lucide-react";
 
@@ -49,6 +51,12 @@ export function App() {
       <Scene />
 
       <Ambience />
+
+      {/* Cookieless, so no consent banner: aggregate traffic only, never
+          identities. SpeedInsights reports Core Web Vitals from real visitors,
+          which is the number that matters for a page shipping this much art. */}
+      <Analytics />
+      <SpeedInsights />
 
       {/* A scrim, not a panel: the copy sits over sunlit grass and water, and
           needs footing without a card boxing it off from the painting. */}
